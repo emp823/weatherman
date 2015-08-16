@@ -4,4 +4,8 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (if (= 1 1)
+    (do (println (conj [1 2 3] 4))
+        "its good")
+    (do (println "Not")
+        "wide right")))
