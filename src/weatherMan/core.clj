@@ -20,4 +20,6 @@
     (println (str "Two is " two))
     (println (str "Three is " three)))
   (testDestructure [1 2 3 4 5 6])
-  (println (map addTwo [1 2 3 12 23])))
+  (println (map addTwo [1 2 3 12 23]))
+  (println (into {} (map (fn [[key val]] [key (inc val)])
+     {:max 30 :min 10}))))
